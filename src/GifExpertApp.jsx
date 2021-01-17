@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import AddCategory from "./components/addCategory";
 import GifGrid from "./components/gifGrid";
 
-const GitExpertApp = () => {
-  const [categories, setCategories] = useState(["One Punch"]);
+const GifExpertApp = ({ defaultCategories = []}) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   /*   const handleAdd = () =>{
     //setCategories([...categories, 'HunterXHunter'])
@@ -31,6 +31,6 @@ const GitExpertApp = () => {
   );
 };
 
-/* GitExpertApp.propTypes = {}; */
+/* GifExpertApp.propTypes = {}; */
 
-export default GitExpertApp;
+export default GifExpertApp;
